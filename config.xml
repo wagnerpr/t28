@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<widget xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" 
+	id="com.inappbrowser.pgbtest" 
+	version="1.0.0">
+	
+    <name>
+        Endica
+    </name>
+        <description>
+        Entretenimento, diversão e carnaval 
+    </description>
+
+    <author href="https://sub.example.com" email="someone@email.com">
+        Yourname
+    </author>
+    
+   <preference name="phonegap-version" value="cli-5.2.0" />
+    
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <icon src="icon.png" />	
+    <access origin="*" />
+ 
+</widget>

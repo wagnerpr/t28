@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Rádio Alegria</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Global InAppBrowser reference
+    var iabRef = null;
+
+    function iabLoadStart(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener('loadstart', iabLoadStart);
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+         alert('Device is ready!');
+         //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
+         //iabRef.addEventListener('loadstart', iabLoadStart);
+         //iabRef.addEventListener('loadstop', iabLoadStop);
+         //iabRef.addEventListener('exit', iabClose);
+    }
+
+    </script>
+<meta charset="utf-8">
+  <style type="text/css">
+  body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #CCC;
+}
+a {
+	font-size: 12px;
+	color: #09C;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #09C;
+}
+a:hover {
+	text-decoration: none;
+	color: #09C;
+}
+a:active {
+	text-decoration: none;
+	color: #09C;
+	text-align: center;
+}
+  body {
+	background-image: url();
+	background-repeat: no-repeat;
+}
+  </style>
+</head>
+  <body>
+  <p><br /><br />
+  <a href="#" onclick="window.open('http://www.alegriatemnome.com.br/appalegria','_blank','location=no','toolbar=no')">carregando...</a><br /><br />
+  </p>
+</body>
+</html>
